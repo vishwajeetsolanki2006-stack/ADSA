@@ -21,6 +21,6 @@ class HashMapDemo:
 # Main program
 h = HashMapDemo()
 
-h.put("Kaushal", 48)
+h.put("vishwajeet", 56)
 
 h.display()
