@@ -5,7 +5,7 @@ class Node:
         self.right = None
 
 
-# Insert node into BST
+
 def insert_node(root, data):
     if root is None:
         return Node(data)
@@ -18,7 +18,7 @@ def insert_node(root, data):
     return root
 
 
-# Pre-order: Root -> Left -> Right
+
 def preorder(node):
     if node is None:
         return
@@ -28,7 +28,7 @@ def preorder(node):
     preorder(node.right)
 
 
-# In-order: Left -> Root -> Right
+
 def inorder(node):
     if node is None:
         return
@@ -38,7 +38,7 @@ def inorder(node):
     inorder(node.right)
 
 
-# Post-order: Left -> Right -> Root
+
 def postorder(node):
     if node is None:
         return
@@ -48,7 +48,7 @@ def postorder(node):
     print(node.data, end=" ")
 
 
-# Main program
+
 root = None
 
 n = int(input("Enter number of nodes: "))
