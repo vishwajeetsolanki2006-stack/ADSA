@@ -1,26 +1,10 @@
-class HashMapDemo:
 
-    def __init__(self):
-        self.name = [None] * 10
-        self.roll = [0] * 10
+def hash_function(key):
+    return key % 10
 
-    def put(self, student_name, roll_no):
-        index = roll_no % 10
+key = int(input("Enter a key: "))
 
-        self.name[index] = student_name
-        self.roll[index] = roll_no
+index = hash_function(key)
 
-    def display(self):
-        for i in range(10):
-            if self.name[i] is not None:
-                print("Index:", i,
-                      "Name:", self.name[i],
-                      "Roll No:", self.roll[i])
+print("Hash index:", index)
 
-
-# Main program
-h = HashMapDemo()
-
-h.put("vishwajeet", 56)
-
-h.display()
